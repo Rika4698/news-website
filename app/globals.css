@@ -3,10 +3,22 @@
 @tailwind utilities;
 
 @layer base {
+
+  html {
+  height: auto;
+  overflow-y: scroll;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
   body {
     @apply bg-gray-50;
     font-family: var(--font-roboto), Helvetica, Arial, sans-serif;
     color: #000000;
+   
   }
 }
 
@@ -31,4 +43,33 @@
     letter-spacing: 0.5px;
   }
   
+}
+
+.slick-slider {
+  position: relative;
+}
+
+.slick-slide {
+  padding: 0;
+}
+
+.slick-slide > div {
+  margin: 0;
+}
+
+/* Hide default arrows */
+.slick-prev,
+.slick-next {
+  z-index: 10;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+/* Track */
+.slick-track {
+  display: flex;
+  align-items: center;
 }

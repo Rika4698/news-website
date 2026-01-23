@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} ${robotoCondensed.variable} ${ptSerif.variable} antialiased`}
+        className={`${roboto.variable} ${robotoCondensed.variable} ${ptSerif.variable} antialiased  `}
       >
         {children}
       </body>

@@ -1,10 +1,14 @@
-import Image from "next/image";
 import Header from "./components/Header";
+import NewsContent from "./components/NewsContent";
+
+
+
 
 export default function Home() {
   return (
-      <div className="min-h-screen bg-gray-50">
+      <div className=" bg-gray-100 ">
       <Header />
+      <NewsContent/>
   
     </div>
   );

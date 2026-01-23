@@ -30,12 +30,12 @@ export default function Header() {
 
   return (
     <>
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-white w-full shadow-sm fixed top-0 z-50">
       {/* Top Bar */}
-      <div className=" lg:border-b border-gray-800">
-        <div className="container mx-auto px-4">
+      <div className=" xl:border-b border-gray-800">
+        <div className="w-full mx-auto">
           {/* Desktop Logo */}
-          <div className="hidden lg:flex items-center justify-center py-7">
+          <div className="hidden xl:flex items-center justify-center py-7">
             <h1 className="logo-text text-[26px] tracking-wider inline-block scale-y-110 font-extrabold  ">
               <span className="">THE</span>{' '}
               <span className="">DOWNTOWN</span>
@@ -45,7 +45,7 @@ export default function Header() {
       
 
           {/* Mobile or Tablet Logo */}
-          <div className="flex lg:hidden items-center justify-between py-4">
+          <div className="flex xl:hidden items-center justify-between py-4 px-4">
                <button onClick={() => setMobileMenuOpen(true)} className='p-1 -ml-1 text-black'>
             <Menu className='w-6 h-6' strokeWidth={3}/>
             </button>
@@ -70,9 +70,9 @@ export default function Header() {
 
       {/* Navigation */}
       <nav className="border-b border-gray-200">
-        <div className="container mx-auto px-4">
+        <div className="w-full mx-auto  ">
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center justify-center space-x-6 py-3">
+          <div className="hidden xl:flex items-center justify-center space-x-6 py-3">
             {navItems.map((item) => (
               <div key={item.name} className="relative">
                 {item.hasDropdown ? (
