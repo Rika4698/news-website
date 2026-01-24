@@ -5,6 +5,7 @@ import bottom2 from "../../public/assets/bottom2.jpg";
 import { Clock } from "lucide-react";
 
 import Image from 'next/image';
+import LatestNews from './LatestNews';
 
 function NewsContent() {
     return (
@@ -12,22 +13,22 @@ function NewsContent() {
       
 
       {/* Main Content Grid */}
-      <div className="w-full mx-auto  py-8 border">
-        <div className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-8 border border-black">
+      <div className="w-full mx-auto px-4  py-8 border">
+        <div className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-8 ">
 
           {/* Left Sidebar - Latest News */}
           <aside className="md:col-span-0 lg:col-span-3 order-2 lg:order-1">
-            {/* <LatestNews /> */}
+            <LatestNews />
           </aside>
 
 
           {/* Main Content Area */}
-          <main className=" border border-black md:col-span-8 md:order- lg:col-span-7 px-3 lg:px-5 lg:-ml-9 lg:mr-14 order-1 lg:order-2 xl:px-8">
+          <main className=" md:col-span-8 md:order- lg:col-span-7 px-3 lg:px-5 lg:-ml-9 lg:mr-14 order-1 lg:order-2 xl:px-8">
             <MainArticle />
 
              {/* Secondary Articles Grid */}
             <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-              
+
                 {/* Card 1 */}
               <div className="group relative shadow bg-white h-full">
   <div className="relative overflow-hidden aspect-[4/3] mb-3 ">
