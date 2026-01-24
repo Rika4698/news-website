@@ -56,8 +56,8 @@ export default function LatestNews() {
   ];
 
   return (
-    <div className="mt-14 lg:mt-36 ">
-    <div className="bg-white px-4 py-6 shadow">
+    <div className="mt-14 xl:mt-36 w-full mx-auto ">
+    <div className="bg-white px-4 py-6 shadow ">
       {/* The Latest Section */}
     
          <div className="w-full">
@@ -73,7 +73,7 @@ export default function LatestNews() {
         {latestArticles.map((article) => (
           <div key={article.id} className="flex gap-3 group cursor-pointer">
             {/* Image */}
-            <div className="w-28 h-[68px] flex-shrink-0 relative overflow-hidden  bg-gray-200">
+            <div className="w-16 xl:w-28 h-[58px] xl:h-[68px] flex-shrink-0 relative overflow-hidden  bg-gray-200">
               <Image 
                 src={article.image}
                 alt={article.title}
@@ -83,7 +83,7 @@ export default function LatestNews() {
             </div>
             {/* Text */}
             <div className="flex-1 ">
-              <p className="article-title-medium font-condensed text-[14px] transition-colors mb-1 font-bold text-[#000] w-[140px] ">
+              <p className="article-title-medium font-condensed text-[14px] transition-colors mb-1 font-bold text-[#000] w-[120px] xl:w-[140px] -mt-1 ">
                 {article.title}
               </p>
            
@@ -97,7 +97,7 @@ export default function LatestNews() {
 
       {/* Opinion Section */}
 
-      <div className=" bg-white px-4 py-5 shadow mt-8">
+      <div className=" bg-white px-4 py-5 shadow lg:mt-8 ">
      
        <div className="w-full">
   <h3 className="text-lg font-semibold mb-2 font-roboto text-[16px] ">Opinion</h3>

@@ -6,7 +6,7 @@ export default function MainArticle() {
   return (
     <>
     <NewsSlider/>
-     <article className=" lg:col-span-2 relative  bg-white shadow-md ">
+     <article className=" lg:col-span-2 relative  bg-white shadow ">
       {/* IMAGE */}
       <div className="relative  w-full h-[240px] sm:h-[298px] md:h-[300px] xl:h-[400px] border border-black">
         <Image
@@ -41,9 +41,9 @@ export default function MainArticle() {
         <h2 className="text-[16px] md:text-[18px] xl:text-[28px] font-bold mt-2 leading-snug text-[#000] font-condensed">
           'Election was rigged' says opposition, police confirm three dead
         </h2>
-    <div className="flex gap-3 text-[10px] lg:text-[11px] text-[#a0a0a0] cursor-pointer">
+    <div className="flex gap-3 text-[10px] lg:text-[11px] text-[#a0a0a0] cursor-pointer font-medium">
  <p className=" text-gray-500 mt-2">
-         <span className="italic font-pserif">By <span className="font-semibold text-black uppercase not-italic font-roboto">John Doe</span> and 1 others</span>  
+         <span className="italic font-pserif">by <span className="font-semibold text-black uppercase not-italic font-roboto">John Doe</span> and 1 others</span>  
         </p>
         <div className=" text-gray-500 mt-2 flex gap-1 font-roboto"><Clock className="w-3 h-3 mt-0.5"/> <p> February 17, 2020</p></div>
 

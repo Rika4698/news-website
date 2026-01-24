@@ -2,6 +2,8 @@ import React from 'react';
 import MainArticle from './MainArticle';
 import bottom1 from "../../public/assets/bottom1.jpg";
 import bottom2 from "../../public/assets/bottom2.jpg";
+import right1 from "../../public/assets/green.jpg";
+import right2 from "../../public/assets/right.jpg";
 import { Clock } from "lucide-react";
 
 import Image from 'next/image';
@@ -13,24 +15,24 @@ function NewsContent() {
       
 
       {/* Main Content Grid */}
-      <div className="w-full mx-auto px-4  py-8 border">
-        <div className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-8 ">
+      <div className="w-full mx-auto px-4  py-8 border border-black">
+        <div className="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 md:gap-6 lg:gap-6 xl:gap-8 border border-black">
 
           {/* Left Sidebar - Latest News */}
-          <aside className="md:col-span-0 lg:col-span-3 order-2 lg:order-1">
+          <aside className="md:col-span-6 md:order-3 lg:col-span-3  lg:order-1 border border-black">
             <LatestNews />
           </aside>
 
 
           {/* Main Content Area */}
-          <main className=" md:col-span-8 md:order- lg:col-span-7 px-3 lg:px-5 lg:-ml-9 lg:mr-14 order-1 lg:order-2 xl:px-8">
+          <main className="border border-red-500 md:col-span-8 md:order- lg:col-span-6 px- lg:px-0 lg:-ml- lg:mr- order-1 lg:order-2 xl:px-">
             <MainArticle />
 
              {/* Secondary Articles Grid */}
             <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
 
                 {/* Card 1 */}
-              <div className="group relative shadow bg-white h-full">
+         <div className="group relative shadow bg-white h-full">
   <div className="relative overflow-hidden aspect-[4/3] mb-3 ">
     <Image
       src={bottom1}
@@ -73,7 +75,7 @@ function NewsContent() {
 </div>
 
               {/* Card 2 */}
-             <div className="group relative shadow bg-white h-full">
+        <div className="group relative shadow bg-white h-full">
   <div className="relative overflow-hidden aspect-[4/3] mb-3 ">
     <Image
       src={bottom2}
@@ -120,6 +122,98 @@ function NewsContent() {
             
           
           </main>
+
+
+
+
+            {/* Right Sidebar */}
+          <aside className="md:col-span-4 md:order-2 lg:col-span-3 lg:order-3   border border-black mt-14 xl:mt-36 ">
+            <div className='grid grid-cols-1 gap-8'>
+
+            {/* Featured Card */}
+               {/* Article 1 */}
+            <div className="relative group bg-white shadow h-full">
+              <div className="absolute top-4 left-4 z-10 bg-[#FFC107] text-white text-[10px] font-bold px-1 py-0.5 uppercase tracking-wider shadow-sm">
+                Opinion
+              </div>
+               <div className="overflow-hidden  w-full">
+                     <Image
+                       src={right1}
+                     alt="Lifestyle"
+                     width={400}
+                   height={267}
+                    className="  "
+                    />
+             
+              </div>
+
+                <div className='px-6 pt-4 pb-6'>
+            <h3 className="text-[18px] md:text-[18px] lg:text-[20px]  font-bold mt-2 leading-snug  text-[#000] font-condensed">
+                    Democratic Party politician calls Prabowo ‘cardboard general’
+                    </h3>
+                <div className="flex gap-3 text-[10px] lg:text-[11px] text-[#a0a0a0] cursor-pointer font-medium">
+             <p className=" text-gray-500 mt-2">
+                     <span className="italic font-pserif">by <span className="font-semibold text-black uppercase not-italic font-roboto">John Doe</span></span>  
+                    </p>
+                    <div className=" text-gray-500 mt-2 flex gap-1 font-roboto"> <Clock className="w-3 h-3 mt-0.5"/> <p>August 10, 2018</p></div>
+            
+                    
+                </div>
+                   
+            
+                    <p className="text-[14px] md:text-[12px] lg:text-[14px] text-[#666] font-pserif mt-4 leading-relaxed font-medium">
+                     Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life...
+                    </p>
+
+                    </div>
+             </div>
+
+
+
+            {/* Article 2 */}
+            <div className="relative group bg-white shadow h-full">
+              <div className="absolute top-4 left-4 z-10 bg-[#f46393] text-white text-[10px] font-bold px-1 py-1 uppercase tracking-wider shadow-sm font-roboto">
+                Lifestyle
+              </div>
+
+                  <div className="overflow-hidden  w-full">
+                     <Image
+                       src={right2}
+                     alt="Lifestyle"
+                     width={400}
+                   height={267}
+                    className="  "
+                    />
+             
+              </div>
+
+              
+              <div className='px-6 pt-4 pb-6'>
+            <h3 className="text-[18px] md:text-[18px] lg:text-[20px]  font-bold mt-2 leading-snug tracking-tight text-[#000] font-condensed">
+                    Google tracks location data even when users turn service off
+                    </h3>
+                <div className="flex gap-3 text-[10px] lg:text-[11px] text-[#a0a0a0] cursor-pointer font-medium">
+             <p className=" text-gray-500 mt-2">
+                     <span className="italic font-pserif">by <span className="font-semibold text-black uppercase not-italic font-roboto">John Doe</span></span>  
+                    </p>
+                    <div className=" text-gray-500 mt-2 flex gap-1 font-roboto"> <Clock className="w-3 h-3 mt-0.5"/> <p>August 14, 2018</p></div>
+            
+                    
+                </div>
+                   
+            
+                    <p className="text-[14px] md:text-[12px] lg:text-[14px] text-[#666] font-pserif mt-4 leading-relaxed font-medium h-full">
+                     Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life...
+                    </p>
+
+                    </div>
+
+
+
+            </div>
+       </div>
+
+          </aside>
 
          
         </div>

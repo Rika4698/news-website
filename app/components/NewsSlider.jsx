@@ -103,7 +103,7 @@ export function NewsSlider() {
   };
 
   return (
-    <div className="mt-14 lg:mt-36 relative w-full shadow py-4 md:pb-2 mb-6 bg-white ">
+    <div className="mt-14 xl:mt-36 relative w-full shadow py-4 md:pb-2 mb-6 bg-white ">
       <div className="px-12   ">
         <Slider {...settings}>
           {NEWS_ITEMS.map((item) => (
