@@ -72,6 +72,8 @@ export default function Header() {
       <nav className="border-b border-gray-200">
         <div className="w-full mx-auto  ">
           {/* Desktop Navigation */}
+       
+
           <div className="hidden xl:flex items-center justify-center space-x-6 py-3">
             {navItems.map((item) => (
               <div key={item.name} className="relative">
